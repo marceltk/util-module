@@ -1,0 +1,42 @@
+{
+  "name": "marceltk/util-module",
+  "type": "library",
+  "description": "Módulo com classes utilitárias ao sistema",
+  "keywords": [
+    "Util"
+  ],
+  "license": "GPL",
+  "homepage": "https://www.unisoft.net.br/",
+  "authors": [
+    {
+      "name": "Marcel Silva",
+      "email": "phpmarcel@gmail.com",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "php": "^5.3 || ^7.0",
+    "zendframework/zend-filter": "2.6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "extra": {
+    "zf": {
+      "module": "UtilModule"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "UtilModule\\": [
+        "src/",
+        "test/"
+      ]
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
